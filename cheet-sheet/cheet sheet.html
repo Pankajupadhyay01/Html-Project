@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheet-Sheet-by pankaj upadhyay</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+
+<body>
+    <nav>
+
+        <div class="header">
+            Copy code For Being Efficent
+        </div>
+    </nav>
+    <div class="main"><br><br>
+        <ol>
+            <li>
+                string search
+                <pre class="language-js">
+                    <code>
+                         <ol>
+                             <li>
+                                String indexOf()
+                                String lastIndexOf()
+                                String startsWith()
+                                String endsWith()
+                             </li>
+                         </ol>
+
+                      </code>
+                </pre>
+            </li>
+            <li>
+                Event in js 
+                <pre class="language-js">
+                    <code>
+1. &lt;button onclick="document.getElementById('id name here ').innerHTML = Date()"&gt;The time is?&lt;/button&gt;
+2. &lt;button onclick="this.innerHTML = Date()"&gt;The time is?&lt;/button&gt;
+3. &lt;button onclick="displayDate()"&gt;The time is?&lt;button&gt;
+
+                      </code>
+                </pre>
+            </li>
+        
+            <li>
+                switch  in js 
+                <pre class="language-js">
+                    <code>
+let day;
+switch (new Date().getDay()) {
+    case 0:
+    day = "Sunday";
+    break;
+    case 1:
+    day = "Monday";
+    break;
+    case 2:
+    day = "Tuesday";
+    break;
+    case 3:
+    day = "Wednesday";
+    break;
+    case 4:
+    day = "Thursday";
+    break;
+    case 5:
+    day = "Friday";
+    break;
+    case  6:
+    day = "Saturday";
+}
+document.getElementById("demo").innerHTML = "Today is " + day;
+
+                      </code>
+                </pre>
+            </li>
+            <li>
+                Function Declarations in js 
+                <pre class="language-js">
+                    <code>
+                        function functionName(a,b) {
+                            // code to be executed
+                          }
+
+                      </code>
+                </pre>
+            </li>
+            <li>
+                form validation
+                <pre class="language-js">
+                    <code>
+function validate() {
+    var name = document.forms["regform"]["fname"];
+    var mail = document.forms["regform"]["fmail"];
+    var pass = document.forms["regform"]["fpass"];
+    var user = document.forms["regform"]["uname"];
+                
+    if (name.value == "") {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+    if (mail.value == "") {
+        window.alert("mail is not entered");
+        mail.focus();
+        return false;
+    }
+    if (pass.value == "") {
+        window.alert("please enter pass");
+                
+        return false;
+    }
+    if (user.value == "") {
+        window.alert("please enter username");
+                
+        return false;
+    }
+                
+}
+                      </code>
+                </pre>
+            </li>
+            <li>
+                Fetch API in js 
+                <pre class="language-js">
+                    <code>
+                        getText("fetch_info.txt");
+
+                        async function getText(file) {
+                          let x = await fetch(file);
+                          let y = await x.text();
+                          document.getElementById("demo").innerHTML = y;
+                        }
+
+                      </code>
+                </pre>
+            </li>
+            <li>
+                moving car animate
+                <pre class="language-js">
+                    <code>
+&lt;div onmouseover="myMove()" id ="animate"&gt;
+&lt;img src="bus .png" alt=""&gt;
+ &lt;/div&gt;
+ //step 2//
+ var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+ btn.onclick = function () {
+    modal.style.display = "block";
+}
+span.onclick = function () {
+    modal.style.display = "none";
+}
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+                      </code>
+                </pre>
+            </li>
+            <li>
+                bulb on off animate
+                <pre class="language-js">
+                    <code>
+                        //html code//
+&lt;img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180"&gt;
+ 
+                        //js code //
+function changeImage() {
+var image = document.getElementById('myImage');
+if (image.src.match("bulbon")) {
+image.src = "pic_bulboff.gif";
+} else {
+image.src = "pic_bulbon.gif";
+}
+}
+                      </code>
+                </pre>
+            </li>
+
+        </ol>
+    </div>
+</body>
+
+</html>
